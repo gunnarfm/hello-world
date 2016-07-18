@@ -1,0 +1,26 @@
+import math as m
+
+desired = 600851475143
+i = 1
+s = []
+while i < m.sqrt(desired):
+	if (desired % i == 0):
+		s.append(i)
+	i = i + 1
+
+
+def prime(num):
+	i = 1
+	p1 = [1, num]
+	p2 = []
+	while i <= num:
+		if (num % i == 0):
+			p2.append(i)
+		i = i + 1
+	if (p1 == p2):
+		print(num)
+	else:
+		print("not a prime")
+
+for x in s:
+	prime(x)
